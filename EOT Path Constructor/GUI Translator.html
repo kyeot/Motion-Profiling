@@ -14,12 +14,12 @@
         div {
             width: 800px;
             height: 400px;
-            margin: -199px 890px 10px 10px;
+            margin: fill;
            background-image: url(https://lh3.googleusercontent.com/-gppOyHf8ZMTNMDAvJaCdOqMqCdBPQoLgCo7m-75SviFdx279cpLyq1WanRyrjW6k6Xp9VQvsJYa6dyoeNB0pXoNkj5BXrDMKAHFs-6JmFzkhGs2tnPHEOakmbNZZr0NBxPXdHuQYBsuyvRO2bEYVTvDL71YaQQe7HL_a1wCon2kXalcAyLnYjIx5PVJiP2guKZqLFcyLLnH51wMy9odvZYwjPvQiguJ_cNzxFqDIWES20b5U4q35j4kb2vaJm8G_bxUyEr0bHqYpl-aK-PODsANmckvZ4qWf4MQUaF0u-xnkKHsB37s4723WfCw6GWjPUAnUtrDx8cnxB5up7yHKypbflPI3Ir4NJe9J_hPq6QHxD_PYYmJLTfQLSC7WhIZ3iV6n2KWycq9fQVYC7T1L6lqqDTP0MeJKmM5qCEc6YP2vf1H1EQY7KEuRoIpbfD_QfTJkR5Ko9S35n75CH-lD6RaiWpxq241oSMZxwvLElJOoE7SBVm-XR68nfNRuka4K3eo5tK-HyG07D5dPBA6qQWjDLJn6L61JmJZbCrNFvLv1kitwzEHfforShu7ng=s432-w432-h220-no);
-           background-size: 100%;
+            background-size: 100%;
             /* background: #42ff49; */
             border: 5px double; color: #db1718;
-            float: right;
+            float: top;
         }
         p {
             margin: 0;
@@ -50,8 +50,8 @@
 
 <script>
     $( "div" ).mousedown(function( event ) {
-        var x = Math.round((((event.pageX)*652)/800));
-        var y = Math.round((((406-(event.pageY)) * 324 / 400)));
+        var x = Math.round((((event.pageX)*652)/800)) - 7;
+        var y = Math.round((((406-(event.pageY)) * 324 / 400))) + 9;
         var pageCoords = x + " " + ", " + " " + y ;
      /*   var clientCoords = "( " + event.clientX + ", " + event.clientY + " )"; */
         $( "span:first" ).text( "X Y Coordinates:" + " " + pageCoords);
