@@ -1,9 +1,9 @@
 var waypoints = [];
 var ctx;
-var width = 1656; //pixels
-var height = 823; //pixels
-var fieldWidth = 652; // in inches
-var fieldHeight = 324; // in inches
+var width = 2330; //pixels
+var height = 3380; //pixels
+var fieldWidth = 233; // in inches
+var fieldHeight = 338; // in inches
 var robotWidth = 35.45; //inches
 var robotHeight = 33.325; //inches
 var pointRadius = 5;
