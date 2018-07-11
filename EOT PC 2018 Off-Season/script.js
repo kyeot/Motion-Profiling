@@ -1,11 +1,11 @@
 var waypoints = [];
 var ctx;
-var width = 2330; //pixels
-var height = 3380; //pixels
+var width = 466; //pixels
+var height = 676; //pixels
 var fieldWidth = 233; // in inches
 var fieldHeight = 338; // in inches
-var robotWidth = 35.45; //inches
-var robotHeight = 33.325; //inches
+var robotWidth = 28; //inches
+var robotHeight = 32.25; //inches
 var pointRadius = 5;
 var turnRadius = 30;
 var kEpsilon = 1E-9;
