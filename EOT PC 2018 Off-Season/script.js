@@ -532,3 +532,53 @@ function getNextSpeed(prev) {
 	}
 	return 0;
 }
+
+function startingPoint() {
+    var prev;
+    if(waypoints.length > 0)
+        prev = waypoints[waypoints.length - 1].position;
+    else
+        prev = new Translation2d(90, 320);
+    $("tbody").append("<tr>"
+        +"<td><input value='"+(90)+"'></td>"
+        +"<td><input value='"+(320)+"'></td>"
+        +"<td><input value='0'></td>"
+        +"<td><input value='60'></td>"
+        +"<td class='comments'><input placeholder='Comments'></td>"
+        +"<td><button onclick='$(this).parent().parent().remove();update()'>Delete</button></td></tr>"
+    );
+    update();
+    $('input').unbind("change paste keyup");
+    $('input').bind("change paste keyup", function() {
+        console.log("change");
+        clearTimeout(wto);
+        wto = setTimeout(function() {
+            update();
+        }, 500);
+    });
+}
+
+function redSquare() {
+    var prev;
+    if(waypoints.length > 0)
+        prev = waypoints[waypoints.length - 1].position;
+    else
+        prev = new Translation2d(49, 217);
+    $("tbody").append("<tr>"
+        +"<td><input value='"+(49)+"'></td>"
+        +"<td><input value='"+(217)+"'></td>"
+        +"<td><input value='0'></td>"
+        +"<td><input value='60'></td>"
+        +"<td class='comments'><input placeholder='Comments'></td>"
+        +"<td><button onclick='$(this).parent().parent().remove();update()'>Delete</button></td></tr>"
+    );
+    update();
+    $('input').unbind("change paste keyup");
+    $('input').bind("change paste keyup", function() {
+        console.log("change");
+        clearTimeout(wto);
+        wto = setTimeout(function() {
+            update();
+        }, 500);
+    });
+}

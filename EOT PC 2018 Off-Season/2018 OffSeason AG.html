@@ -233,24 +233,22 @@
 </head>
 <body onload="init()">
 	<input id="title" placeholder="Title of Autonomous">
-	<canvas id="field"></canvas>
+	<canvas id="field"><img src="field.png"></canvas>
 	<div class="buttonContainer">
 		<button onclick="addPoint()">Add Point</button>
-		<!-- <button onclick="update()">Update</button> -->
+			<!-- <button onclick="update()">Update</button> -->
 		<button onclick="exportData()">Download</button>
 		<button onclick="showData()">Display Path</button>
 		<button onclick="importData()">Import</button>
 		<button onclick="flipField()">Flip Field</button>
-		<aside style="color: #db1718; font-size: 20px; float: right;font-family:Haettenschweiler;">Baseline:<input type="checkbox" style="cursor: default " id="Baseline"></aside>
-		<span style="color: #db1718; font-size: 20px; float: right; font-family:Haettenschweiler; ">Switch:<input type="checkbox" id="Switch"></span>
-		<span style="color: #db1718; font-size: 20px; float: right;font-family:Haettenschweiler;">Scale:<input type="checkbox" id="Scale"></span>
-		<span style="color: #db1718; font-size: 20px; float: right;font-family:Haettenschweiler;">2 Switch:<input type="checkbox" id="2 Switch"></span>
-		<span style="color: #db1718; font-size: 20px; float: right;font-family:Haettenschweiler;">Switch+Scale:<input type="checkbox" id="Switch+Scale"></span>
-		<span style="color: #db1718; font-size: 20px; float: right;font-family:Haettenschweiler;">2 Scale:<input type="checkbox" id="2 Scale"></span>
+		<button onclick="startingPoint()">Starting Position</button>
+			<!-- adds starting point -->
+        <button onclick="redSquare()">Red Square</button>
+        <!-- adds red square point -->
 
 
 
-	</div>
+    </div>
 	<table>
 		<thead>
 			<th>X</th>
